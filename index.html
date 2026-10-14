@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javerio Ezar | Information Management & Technology Portfolio</title>
+  <meta name="description" content="Portfolio of Javerio Ezar - Information Management graduate, software developer, and operations specialist based in Taichung, Taiwan.">
+  <meta name="keywords" content="Javerio Ezar, Information Management, Unity, C#, PHP, MySQL, Portfolio, Taichung, Taiwan">
+  <meta name="author" content="Javerio Ezar">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Javerio Ezar | Portfolio">
+  <meta property="og:description" content="Information Management graduate · GPA 4.16/4.30 · Software Systems & Operations">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jav3124.github.io/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230f172a'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='42' fill='%2338bdf8'>JE</text></svg>">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-box">JE</span>
+        <span class="brand-name">Javerio Ezar</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+
+        <!-- Print Resume Button -->
+        <button onclick="window.print()" class="btn-secondary btn-sm print-hide" title="Print or save as PDF">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+          <span>CV / PDF</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" class="btn-icon mobile-only" aria-label="Open Navigation Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-indicator"></span>
+          <span>Information Management Graduate · Taichung, Taiwan</span>
+        </div>
+
+        <h1 class="hero-title">
+          Bridging Systems, <br>
+          <span class="gradient-text">Data Analysis</span> &amp; Operations.
+        </h1>
+
+        <p class="hero-description">
+          Hi, I'm <strong>Javerio Ezar</strong>. An Information Management graduate combining academic rigor 
+          (<strong>GPA 4.16 / 4.30</strong>, Ranked 1st in class) with real-world agility across Unity/C# engineering, 
+          PHP/MySQL systems, multilingual instruction, and high-tempo service operations.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">
+            <span>Explore Projects</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn-outline">
+            <span>Get in Touch</span>
+          </a>
+          <a href="https://github.com/Jav3124" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+
+        <!-- Quick Stats Grid -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number">4.16<span class="stat-sub">/4.30</span></div>
+            <div class="stat-label">Academic GPA</div>
+            <div class="stat-detail">#1 in Class (3 Semesters)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">Award<span class="stat-sub">★</span></div>
+            <div class="stat-label">Capstone Excellence</div>
+            <div class="stat-detail">The Final Lesson (Unity/PHP)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">IELTS 7.5</div>
+            <div class="stat-label">English Fluency</div>
+            <div class="stat-detail">L 8.5 · R 8.0 · W 6.5 · S 6.5</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3+ <span class="stat-sub">Yrs</span></div>
+            <div class="stat-label">Operational Work</div>
+            <div class="stat-detail">Teaching &amp; Fast-Paced Service</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Background &amp; Profile</span>
+        <h2 class="section-title">Who I Am</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card primary-bio">
+          <h3>Information Management &amp; Digital Transformation</h3>
+          <p>
+            I am an Information Management graduate from <strong>Chaoyang University of Technology (CYUT)</strong>, 
+            driven by how systems, data insights, and agile operations combine to solve practical problems.
+          </p>
+          <p>
+            My background combines rigorous academic achievement (serving as Class Representative for four semesters 
+            and ranking top of the department) with extensive front-line experience. Whether coordinating kitchen line 
+            operations during high-volume dinner rushes, teaching English to young learners, or architecting backend 
+            data pipelines for interactive game demos, I thrive under pressure, value teamwork, and bring high attention to detail.
+          </p>
+          
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">📍</span>
+              <div>
+                <strong>Location:</strong> Taichung, Taiwan
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🎓</span>
+              <div>
+                <strong>Degree:</strong> B.S. in Information Management (2026)
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🎯</span>
+              <div>
+                <strong>Target Roles:</strong> IT Support, Business Operations, Systems/Data Analysis, Technology Integration
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🗣️</span>
+              <div>
+                <strong>Languages:</strong> Indonesian (Native), English (Fluent / IELTS 7.5), Mandarin Chinese (Conversational)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card core-values">
+          <h3>Core Philosophy</h3>
+          <ul class="values-list">
+            <li>
+              <div class="value-bullet">01</div>
+              <div>
+                <h4>Adaptability &amp; Composure</h4>
+                <p>Comfortable thriving in fast-moving, high-stress environments, from live commercial kitchens to tight development sprints.</p>
+              </div>
+            </li>
+            <li>
+              <div class="value-bullet">02</div>
+              <div>
+                <h4>Systematic Problem Solving</h4>
+                <p>Analyzing bottlenecks and structuring workflows with precision, whether in database architecture or operational stock-checks.</p>
+              </div>
+            </li>
+            <li>
+              <div class="value-bullet">03</div>
+              <div>
+                <h4>Empathetic Communication</h4>
+                <p>Connecting clearly across diverse cultures, age groups, and multidisciplinary teams in Indonesian, English, and Chinese.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Competencies</span>
+        <h2 class="section-title">Technical &amp; Professional Skills</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">A blend of computational foundations, business operations, and interpersonal agility.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Tech & Systems -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="cat-icon">💻</div>
+            <h3>Software &amp; Systems</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Unity 2022.3</span>
+            <span class="skill-pill">C#</span>
+            <span class="skill-pill">PHP</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Backend Integration</span>
+            <span class="skill-pill">UI/UX Systems Design</span>
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">HTML5 &amp; CSS3</span>
+            <span class="skill-pill">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Business & Operations -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="cat-icon">📈</div>
+            <h3>Business &amp; Operations</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Information Systems</span>
+            <span class="skill-pill">Business Operations</span>
+            <span class="skill-pill">Inventory &amp; Stock Auditing</span>
+            <span class="skill-pill">Spreadsheets &amp; MS Office</span>
+            <span class="skill-pill">Data Analysis Concepts</span>
+            <span class="skill-pill">Digital Transformation</span>
+            <span class="skill-pill">Quality &amp; Hygiene Standards</span>
+            <span class="skill-pill">Process Flow Optimization</span>
+          </div>
+        </div>
+
+        <!-- Professional & Interpersonal -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="cat-icon">🤝</div>
+            <h3>Leadership &amp; Execution</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-pill">Cross-Functional Teamwork</span>
+            <span class="skill-pill">Class Representative (4 Sems)</span>
+            <span class="skill-pill">Customer Relationship &amp; Service</span>
+            <span class="skill-pill">Adaptability Under Pressure</span>
+            <span class="skill-pill">Instructional Adaptability</span>
+            <span class="skill-pill">Attention to Detail</span>
+            <span class="skill-pill">Event Planning &amp; Volunteering</span>
+          </div>
+        </div>
+
+        <!-- Language Proficiency -->
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <div class="cat-icon">🌐</div>
+            <h3>Language Proficiency</h3>
+          </div>
+          <div class="languages-display">
+            <div class="lang-row">
+              <div class="lang-meta">
+                <span class="lang-name">Indonesian</span>
+                <span class="lang-badge">Native / Fluent</span>
+              </div>
+              <div class="lang-bar"><div class="lang-progress" style="width: 100%;"></div></div>
+            </div>
+
+            <div class="lang-row">
+              <div class="lang-meta">
+                <span class="lang-name">English</span>
+                <span class="lang-badge highlight-badge">IELTS 7.5 (C1 Academic)</span>
+              </div>
+              <div class="lang-bar"><div class="lang-progress" style="width: 90%;"></div></div>
+              <div class="ielts-breakdown">
+                <span>Listening: <strong>8.5</strong></span>
+                <span>Reading: <strong>8.0</strong></span>
+                <span>Writing: <strong>6.5</strong></span>
+                <span>Speaking: <strong>6.5</strong></span>
+              </div>
+            </div>
+
+            <div class="lang-row">
+              <div class="lang-meta">
+                <span class="lang-name">Mandarin Chinese</span>
+                <span class="lang-badge">Conversational Practice</span>
+              </div>
+              <div class="lang-bar"><div class="lang-progress" style="width: 55%;"></div></div>
+              <div class="lang-detail">Active daily immersion in university &amp; local Taiwan operations</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Work &amp; Achievements</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">Engineering systems, interactive applications, and academic honors.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Main Project: The Final Lesson -->
+        <div class="project-card featured">
+          <div class="project-badge-top">
+            <span class="badge-award">🏆 Excellence Award</span>
+            <span class="badge-meta">Capstone Project · Team 2025-28</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">The Final Lesson — Psychological Horror &amp; Puzzle Game</h3>
+            <p class="project-summary">
+              A first-person psychological horror and narrative puzzle game demo built using <strong>Unity 2022.3</strong> 
+              and <strong>C#</strong>, seamlessly integrated with a custom <strong>PHP / MySQL</strong> backend for user data tracking, 
+              session persistence, and gameplay analytics.
+            </p>
+
+            <div class="project-roles">
+              <div class="role-box">
+                <strong>Key Contributions:</strong>
+                <ul>
+                  <li>Architected UI/UX flows and responsive in-game system menus.</li>
+                  <li>Integrated game events and save states with a remote PHP/MySQL database.</li>
+                  <li>Led cross-functional team coordination across level puzzles, audio triggers, and system mechanics.</li>
+                  <li>Conducted extensive iteration, player testing, and bug remediation leading to the departmental <em>Excellence Award</em>.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-tech">
+              <span class="tech-tag">Unity 2022.3</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">UI/UX Design</span>
+              <span class="tech-tag">Backend Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary Highlights -->
+        <div class="project-card">
+          <div class="project-badge-top">
+            <span class="badge-meta">Academic Excellence</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CYUT Academic Leadership &amp; Performance</h3>
+            <p class="project-summary">
+              Maintained top academic standing across six consecutive semesters with a cumulative <strong>GPA of 4.16 / 4.30</strong>.
+              Ranked <strong>first in class for 3 consecutive semesters</strong> and elected as Class Representative for 4 semesters, 
+              acting as the primary liaison between faculty and students.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Information Management</span>
+              <span class="tech-tag">Leadership</span>
+              <span class="tech-tag">Peer Mentorship</span>
+              <span class="tech-tag">CYUT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-badge-top">
+            <span class="badge-meta">Community &amp; Culture</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">International Student Organization &amp; Event Coordination</h3>
+            <p class="project-summary">
+              Active organizer and volunteer for Indonesian and cross-cultural student associations at Chaoyang University of Technology.
+              Managed event planning, logistics, intercultural workshops, and support networks for newly arriving international students.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Event Planning</span>
+              <span class="tech-tag">Cross-Cultural Collaboration</span>
+              <span class="tech-tag">Logistics</span>
+              <span class="tech-tag">Volunteering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career History</span>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">Demonstrated adaptability, discipline, and high-performance in active commercial environments.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">English Academy Teacher</h3>
+                <span class="timeline-company">English Academy</span>
+              </div>
+              <span class="timeline-period">Jun 2025 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Instruct elementary-school students in English foundational literacy, phonics, and conversational dialogue.</li>
+              <li>Adapt complex linguistic explanations into engaging, age-appropriate interactive activities for beginner learners.</li>
+              <li>Foster learner confidence, vocabulary retention, and active English participation in positive classroom settings.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Instruction</span>
+              <span>Classroom Management</span>
+              <span>Communication</span>
+              <span>Curriculum Delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Kitchen Operations &amp; Station Staff</h3>
+                <span class="timeline-company">Jack Brothers Steakhouse</span>
+              </div>
+              <span class="timeline-period">Feb 2023 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Manage multiple kitchen preparation stations simultaneously (salad/dessert, sauté, fry, and cold lines) during high-volume service.</li>
+              <li>Receive, inspect, and verify raw ingredient deliveries; audit cold-chain stock levels and uphold rigorous hygiene standards.</li>
+              <li>Coordinate synchronously with expeditors and kitchen teammates to dispatch orders with speed, accuracy, and temperature precision.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Operational Logistics</span>
+              <span>Stock &amp; Delivery Auditing</span>
+              <span>High-Stress Execution</span>
+              <span>Team Coordination</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Breakfast Service Waiter (Part-Time)</h3>
+                <span class="timeline-company">Tempus Hotel</span>
+              </div>
+              <span class="timeline-period">2023 – 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Delivered high-standard hospitality dining experiences for international and corporate hotel guests.</li>
+              <li>Handled dynamic guest requests, monitored breakfast buffet replenishment, and maintained immaculate dining floor standards.</li>
+              <li>Collaborated with hospitality service crews to maintain smooth table turnover during peak morning rush periods.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Hospitality</span>
+              <span>Customer Experience</span>
+              <span>Fast-Paced Service</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">University English Teaching Assistant</h3>
+                <span class="timeline-company">University English Support</span>
+              </div>
+              <span class="timeline-period">Jan 2023 – Jan 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Assisted Taiwanese university students with practical English learning coursework, conversational drills, and speaking modules.</li>
+              <li>Provided clear, bilingual explanations to clarify coursework instructions and facilitated peer group discussions.</li>
+              <li>Evaluated classroom engagement and provided feedback to lead lecturers to enhance student learning outcomes.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Higher Education</span>
+              <span>Bilingual Communication</span>
+              <span>Peer Mentoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Credentials</span>
+        <h2 class="section-title">Education &amp; Background</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="education-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-details">
+            <span class="edu-dates">Expected / Completed 2026 · Taichung, Taiwan</span>
+            <h3 class="edu-degree">Bachelor of Science in Information Management</h3>
+            <h4 class="edu-school">Chaoyang University of Technology (CYUT)</h4>
+            
+            <div class="edu-gpa-badge">
+              <strong>GPA: 4.16 / 4.30</strong> (Evaluated over 6 completed semesters)
+            </div>
+
+            <ul class="edu-achievements">
+              <li>Ranked <strong>1st in Class</strong> for three consecutive semesters.</li>
+              <li>Appointed <strong>Class Representative</strong> for four semesters.</li>
+              <li>Capstone Project: <strong>Excellence Award</strong> (The Final Lesson - Unity/C#/PHP/MySQL).</li>
+              <li>Active participant and organizer in university international student events.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">🏫</div>
+          <div class="edu-details">
+            <span class="edu-dates">2019 – 2022</span>
+            <h3 class="edu-degree">High School Diploma</h3>
+            <h4 class="edu-school">Taman Rama Intercultural School</h4>
+            
+            <p class="edu-focus">
+              Key Focus Areas: Mathematics, Information Technology, Chemistry. 
+              Built a strong foundation in analytical logic, computational principles, and international multilingual collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-divider"></div>
+        <p class="section-desc">Open to IT support, business operations, data analysis, and technology-focused opportunities.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-cards">
+          <!-- Card 1: Location -->
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div class="contact-card-body">
+              <h4>Location</h4>
+              <p>Taichung, Taiwan</p>
+              <span class="contact-sub">Open to local &amp; remote opportunities</span>
+            </div>
+          </div>
+
+          <!-- Card 2: GitHub -->
+          <a href="https://github.com/Jav3124" target="_blank" rel="noopener noreferrer" class="contact-card contact-link">
+            <div class="contact-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <h4>GitHub</h4>
+              <p>github.com/Jav3124</p>
+              <span class="contact-sub">View repositories &amp; code</span>
+            </div>
+          </a>
+
+          <!-- Card 3: Academic / University -->
+          <div class="contact-card">
+            <div class="contact-card-icon">🎓</div>
+            <div class="contact-card-body">
+              <h4>Institution</h4>
+              <p>Chaoyang University of Technology</p>
+              <span class="contact-sub">Dept. of Information Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Message / Connect Box -->
+        <div class="contact-box">
+          <h3>Let's Collaborate</h3>
+          <p>
+            Whether you have an inquiry regarding IT operations, software engineering, business systems analysis, 
+            or potential roles, feel free to reach out directly.
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:javerioezar3124@gmail.com?subject=Opportunity%20Inquiry%20-%20Javerio%20Ezar" class="btn-primary" id="email-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>Send an Email</span>
+            </a>
+            <button class="btn-secondary" id="copy-email-btn" data-email="javerioezar3124@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              <span id="copy-text">Copy Contact Email</span>
+            </button>
+          </div>
+          <div id="copy-toast" class="toast-message" style="display: none;">Email copied to clipboard!</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="logo-box">JE</span>
+        <div>
+          <div class="footer-name">Javerio Ezar</div>
+          <div class="footer-tagline">Information Management · Systems &amp; Operations</div>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <p>&copy; <span id="year">2026</span> Javerio Ezar. All rights reserved.</p>
+        <p class="footer-sub">Hosted on <a href="https://github.com/Jav3124/Jav3124.github.io" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="btn-icon" aria-label="Back to top" title="Back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
